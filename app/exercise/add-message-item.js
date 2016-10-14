@@ -1,2 +1,6 @@
-export default function addMessageItem(message1, message2) {
+import createMessage from './create-message-item';
+
+export default function addMessageItem(list, message) {
+  const li = createMessage(message);
+  list.appendChild(li);
 }
