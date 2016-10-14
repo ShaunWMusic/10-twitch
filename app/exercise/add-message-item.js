@@ -1,10 +1,2 @@
-export default function List(ul, save) {
-  this.items = [];
-  this.ul = ul;
-  this.save = save;
+export default function addMessageItem(message1, message2) {
 }
-           // add item to list
-List.prototype.add = function (item) {
-  this.items.push(item);
-  this.rebuildDom();
-};
