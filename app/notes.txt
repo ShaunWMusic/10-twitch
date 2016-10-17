@@ -1,0 +1,25 @@
+FAQ
+[ ] test driven development - dedicated lesson this week
+[ ] 'debugger'
+[ ] JS DOM manipulation
+[ ] 'document.createElement(tagName)' - creates a new element floating around in memory (not shown to user yet)
+[ ] 'document.querySelector(selector)' - looks for the first instance of an element that matches the selector in th whole page
+[ ] 'element.querySelector(selector)' - looks for the first instance of an element that matches the selector within a specific element
+  [ ] ex 'track.querySelector('h1')' this selects the first 'h1' element in the 'track' element
+[ ] 'element.classList.add(className)'  adds a class to the element based on the passed in string argument
+  [ ] ex 'track.classList.add('track-item')'
+[ ] 'element.classList.remove(className)' -- removes a class from the element based on the passed in string argument
+  [ ] ex. 'track.classList.remove('track-item')'
+  [ ] 'element.classList.toggle(className)' - if the calss does not exist on the element add it, if it does, remove it (helpful for
+      hiding/showing element like dropdowns or for CSS animations)
+  [ ] ex. 'dropdown.classList.toggle('is-open')'
+  [ ] ex. 'dropdown.classList.toggle('dropdown--open')'
+[ ] 'element.innerText' - sets the contents of the element, escaing all special characters (helpful to protect from scriptting attacks)
+[ ]
+ 'element.innerHTML' - sets the contents of the element and all content will be parsed as HTML. This should only be used for templates, string literals, and TRUSTED information
+    (so don't use it with variable data)
+    [ ] this is 'x.innerHTML' = someVariables' (what if 'someVariables = '<script type="javascript"> > window.location =
+      "http://someothersite.com"</script>' , this would redirect our page based on user input data and allow for security attacks)
+
+
+JS``

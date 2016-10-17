@@ -3,7 +3,7 @@ export default function reverseList(list, output) {
 
   for (let i = children.length - 1; i >= 0; i--) {
     const copy = children[i].cloneNode(true);
-    console.log(copy);
+    // console.log(copy);
     output.appendChild(copy);
     // console.log(copy);
   }
