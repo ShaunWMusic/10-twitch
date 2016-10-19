@@ -1,48 +1,50 @@
 .sidebar {
-  background: $c-sidebar-background;
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background: $c-sidebar-background;
 }
 
 .img {
+  width: 10rem;
   height: 100%;
   object-fit: cover;
-  width: 10rem;
 }
 
 .fa {
-  margin:0 1rem;
+  margin: 0 1rem;
   color: $c-icon-color;
 }
 
 .fa-search {
   color: $c-search-bar-icon;
 }
+
 .sidebar-item {
-  color: $c-font-color;
   display: flex;
   justify-content: space-between;
+  color: $c-font-color;
 }
 
 .list-items {
-  color: $c-list-items-color;
   margin: 0.5rem;
+  color: $c-list-items-color;
 }
 
 .search-bar {
-  background: $c-search-bar-background;
-  box-shadow:#392e5c 0 0 0 1px;
   margin: 1rem;
   padding: 0.5rem;
+  background: $c-search-bar-background;
+  box-shadow: #392e5c 0 0 0 1px;
 
 }
+
 .search {
-font-size: 1rem;
+  font-size: 1rem;
 }
 
 .dropdown {
-  margin-left: 1rem;
   margin-top: 1rem;
+  margin-left: 1rem;
   font-size: 0.8rem;
 }
