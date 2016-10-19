@@ -1,17 +1,26 @@
 .sidebar-section {
   display: flex;
   margin: 1rem;
+  padding: 1rem 1rem 1rem 0;
   border-top: 0.1rem solid $c-sidebar-border;
-  padding: 1rem;
   &__content {
     color: $c-font-color;
   }
-}
+  &__img {
+    width: 4rem;
+    height: 100%;
+    margin: 0.5rem 0.5rem 0 0;
+    object-fit: cover;
+  }
 
+  &__header {
+    color: $c-font-color;
+    font-size: 0.8rem;
+  }
 
-.sidebar-section__img {
-  width: 4rem;
-  height: 100%;
-  object-fit: cover;
-  margin: 0.5rem;
+  &__title {
+    color: $c-sidebar-sectiontitle;
+    font-size: 0.8rem;
+  }
+
 }

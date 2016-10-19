@@ -4,6 +4,7 @@
   height: 100vh;
   background: $c-sidebar-background;
   max-width: 15rem;
+  overflow: auto;
 }
 
 .logo {
@@ -23,6 +24,7 @@
 }
 
 .fa-search {
+  margin: 0 0.2rem;
   color: $c-search-bar-icon;
 }
 
@@ -47,7 +49,8 @@
 
 .search {
   width: 45%;
-  font-size: 0.8rem;
+  margin: 0 0.8rem;
+  font-size: 0.9rem;
 }
 
 .dropdown {
