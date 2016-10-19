@@ -42,7 +42,7 @@
 .search-bar {
   margin: 0 1rem;
   padding: 0.5rem;
-  background: $c-search-bar-background;
+  background: $c-sidebar-background;
   box-shadow: #392e5c 0 0 0 1px;
 
 }
@@ -50,7 +50,10 @@
 .search {
   width: 45%;
   margin: 0 0.8rem;
+  background: $c-sidebar-background;
+  color: $c-search-bar-icon;
   font-size: 0.9rem;
+
 }
 
 .dropdown {

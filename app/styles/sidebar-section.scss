@@ -1,15 +1,23 @@
 .sidebar-section {
   display: flex;
+  flex-direction: column;
   margin: 1rem;
   padding: 1rem 1rem 1rem 0;
   border-top: 0.1rem solid $c-sidebar-border;
+
   &__content {
     color: $c-font-color;
   }
-  &__img {
-    width: 4rem;
-    height: 100%;
-    margin: 0.5rem 0.5rem 0 0;
+  &__img1 {
+    width: 27%;
+    height: 2rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    object-fit: cover;
+  }
+  &__img2 {
+    width: 19%;
+    height: 2rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
     object-fit: cover;
   }
 
@@ -21,6 +29,12 @@
   &__title {
     color: $c-sidebar-sectiontitle;
     font-size: 0.8rem;
+  }
+
+  &__prime {
+    display: flex;
+    justify-content: center;
+    margin: 0.4rem 0;
   }
 
 }
