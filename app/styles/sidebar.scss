@@ -5,8 +5,12 @@
   background: $c-sidebar-background;
 }
 
+.logo {
+  margin: 0.5rem auto;
+}
+
 .img {
-  width: 10rem;
+  width: 7rem;
   height: 100%;
   object-fit: cover;
 }
@@ -14,6 +18,7 @@
 .fa {
   margin: 0 1rem;
   color: $c-icon-color;
+  font-size: 1rem;
 }
 
 .fa-search {

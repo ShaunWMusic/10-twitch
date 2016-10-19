@@ -4,6 +4,7 @@ $c-icon-color: #fff;
 $c-sidebar-background: #000;
 $c-search-bar-background: #fff;
 $c-search-bar-icon: #6e6d6d;
+$c-sidebar-border: #2c2541;
 
 
 // @import 'yoga-sass/assets/yoga';
@@ -15,3 +16,5 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'resets';
 @import 'sidebar';
 @import 'full-page';
+@import 'sidebar-footer';
+@import 'sidebar-section';
