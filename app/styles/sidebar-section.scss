@@ -1,4 +1,17 @@
 .sidebar-section {
+  display: flex;
   margin: 1rem;
   border-top: 0.1rem solid $c-sidebar-border;
+  padding: 1rem;
+  &__content {
+    color: $c-font-color;
+  }
+}
+
+
+.sidebar-section__img {
+  width: 4rem;
+  height: 100%;
+  object-fit: cover;
+  margin: 0.5rem;
 }

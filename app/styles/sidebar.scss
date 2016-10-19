@@ -3,14 +3,15 @@
   flex-direction: column;
   height: 100vh;
   background: $c-sidebar-background;
+  max-width: 15rem;
 }
 
 .logo {
   margin: 0.5rem auto;
 }
 
-.img {
-  width: 7rem;
+.sidebar-img {
+  width: 6rem;
   height: 100%;
   object-fit: cover;
 }
@@ -37,7 +38,7 @@
 }
 
 .search-bar {
-  margin: 1rem;
+  margin: 0 1rem;
   padding: 0.5rem;
   background: $c-search-bar-background;
   box-shadow: #392e5c 0 0 0 1px;
@@ -45,7 +46,8 @@
 }
 
 .search {
-  font-size: 1rem;
+  width: 45%;
+  font-size: 0.8rem;
 }
 
 .dropdown {
