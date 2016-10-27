@@ -4,7 +4,7 @@
 
 .sidebar-footer-item {
   display: block;
-  color: white;
+  color: rgba(137, 131, 124, 1.0);
   margin: 2rem 3rem 0;
   margin-bottom: -1rem;
 }
@@ -21,15 +21,12 @@
   &-section {
     font-size: 0.6rem;
     margin: 1rem;
+    margin-bottom: 3rem;
   }
 
   &__item {
     color: white;
 
-    &--right {
-
-
-    }
 }
 
 }
