@@ -1,7 +1,12 @@
 .full-height {
   display: flex;
+  height: 100vh;
+  overflow: hidden;
 
-  overflow: auto;
+  &__main {
+    padding: 1rem;
+    overflow: scroll;
+  }
 }
 
 body {

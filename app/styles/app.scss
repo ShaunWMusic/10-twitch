@@ -21,11 +21,6 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'sidebar-section';
 @import 'sidebar-bottom-section';
 
-
-.fullheight__main {
-  padding: 1rem;
-}
-
 .container {
   max-width: 60rem;
   margin: 0 auto;
@@ -35,28 +30,33 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .results {
   display: flex;
   flex-wrap: wrap;
+  margin: -1rem;
 }
 
 .game-item {
   flex-basis: calc(100% 1 / 3 - 2rem);
   margin: 1rem;
   flex-grow: 1;
+
+  &__pic {
+    width: 100%;
+  }
 }
 
 .title {
   justify-content: space-between;
   font-size: 2rem;
-  padding: 1rem;
+  line-height: 2rem;
 }
 
 .main-header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  margin: 1rem 0;
 
   input {
     border: 0.1rem solid grey;
     padding: 0.4rem;
-    margin-top: 0.5rem;
-    margin-right: 1rem;
   }
 }
