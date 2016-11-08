@@ -10,7 +10,7 @@ export default function createGameElement(data) {
   <img src="" alt="" class="game-item__pic"/>`;
 
   const title = item.querySelector('.game-item__name');
-  title.innerText = data.name;
+  title.innerText = data.game.name;
 
   const popularity = item.querySelector('.game-item__popularity');
   popularity.innerText = data.popularity;
