@@ -1,6 +1,7 @@
 /* eslint-env qunit */
 
 QUnit.module('Twitch Game Page');
+import showGamesInList from '../../app/twitch/add-games-to-list';
 
 const itemOne = {
   name: 'StarCraft II',
@@ -42,7 +43,6 @@ const itemTwo = {
   _links: {},
 };
 
-// This helps look for all the right stuff within game item elements
 function testUiForItem(el, item, assert, msgPrefix) {
   assert.ok(el instanceof Element,
     `${msgPrefix}: The game item should be an Element object
@@ -61,7 +61,7 @@ function testUiForItem(el, item, assert, msgPrefix) {
   const gameName = el.querySelector('h4.game-item__popularity');
   assert.ok(gameName,
     `${msgPrefix}: The game item contains an element with the class 'game-item__popularity'`);
-  assert.equal(gameName.innerText.trim(), item.popularity,
+  assert.equal(gameName.innerText.trim(), `${item.popularity} Viewers`,
     `${msgPrefix}: The game item popularity contains the game item's game name from the data`);
 
   // Check game item picture
@@ -74,17 +74,25 @@ function testUiForItem(el, item, assert, msgPrefix) {
     `${msgPrefix}: The game item pic has an alt from the game item's name`);
 }
 
-import createGameItem from '../../app/twitch/create-game-element';
 
-test('it can create a gameItem element', (assert) => {
-  // Check the game item element
-  const gameItem = createGameItem(itemOne);
+test('it can add games to the list of games', (assert) => {
+  const parentEl = document.createElement('div');
 
-  testUiForItem(gameItem, itemOne, assert,
-    'Result of createGameItem with itemOne');
+  showGamesInList(parentEl, [{ game: itemOne }, { game: itemTwo }]);
 
-  const gameItemTwo = createGameItem(itemTwo);
+  const gameItemOne = parentEl.querySelector('.game-item');
+  const gameItemTwo = parentEl.querySelector('.game-item:last-of-type');
+
+  testUiForItem(gameItemOne, itemOne, assert,
+    'Result of showAllResults for itemOne');
 
   testUiForItem(gameItemTwo, itemTwo, assert,
-    'Result of createGameItem with itemTwo');
+    'Result of showAllResults for itemOne');
+
+  showGamesInList(parentEl, [{ game: itemTwo }]);
+
+  const gameItemReset = parentEl.querySelector('.game-item');
+
+  testUiForItem(gameItemReset, itemTwo, assert,
+    'showGamesInList should empty the element before adding items');
 });

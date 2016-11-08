@@ -61,7 +61,7 @@ function testUiForItem(el, item, assert, msgPrefix) {
   const gameName = el.querySelector('h4.game-item__popularity');
   assert.ok(gameName,
     `${msgPrefix}: The game item contains an element with the class 'game-item__popularity'`);
-  assert.equal(gameName.innerText.trim(), item.popularity,
+  assert.equal(gameName.innerText.trim(), `${item.popularity} Viewers`,
     `${msgPrefix}: The game item popularity contains the game item's game name from the data`);
 
   // Check game item picture
@@ -78,7 +78,7 @@ function testUiForItem(el, item, assert, msgPrefix) {
 test('it can add games to the list of games', (assert) => {
   const parentEl = document.createElement('div');
 
-  showGamesInList(parentEl, [itemOne, itemTwo]);
+  showGamesInList(parentEl, [{ game: itemOne }, { game: itemTwo }]);
 
   const gameItemOne = parentEl.querySelector('.game-item');
   const gameItemTwo = parentEl.querySelector('.game-item:last-of-type');
@@ -89,7 +89,7 @@ test('it can add games to the list of games', (assert) => {
   testUiForItem(gameItemTwo, itemTwo, assert,
     'Result of showAllResults for itemOne');
 
-  showGamesInList(parentEl, [itemTwo]);
+  showGamesInList(parentEl, [{ game: itemTwo }]);
 
   const gameItemReset = parentEl.querySelector('.game-item');
 
