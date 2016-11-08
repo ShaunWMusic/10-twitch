@@ -9,4 +9,3 @@ import addGamesToList from './twitch/add-games-to-list';
 const ul = document.querySelector('.results');
 
 addGamesToList(ul, data.top);
->>>>>>> d779e80d161214f673de8f265445fd10390fb13c
