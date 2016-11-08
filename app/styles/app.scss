@@ -44,6 +44,19 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 }
 
 .title {
+  justify-content: space-between;
   font-size: 2rem;
   padding: 1rem;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    border: 0.1rem solid grey;
+    padding: 0.4rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+  }
 }
