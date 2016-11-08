@@ -3,17 +3,18 @@ export default function createGameElement(data) {
   item.classList.add('game-item');
 
   item.innerHTML = `
-  <div className="frame">
-    <h3 class="game-item__name"></h3>
-    <h4 class="game-item__popularity"></h4>
+  <div class="frame">
+    <img src="" alt="" class="game-item__pic"/>
   </div>
-  <img src="" alt="" class="game-item__pic"/>`;
+  <h3 class="game-item__name"></h3>
+  <h4 class="game-item__popularity"></h4>
+  `;
 
   const title = item.querySelector('.game-item__name');
-  title.innerText = data.game.name;
+  title.innerText = data.name;
 
   const popularity = item.querySelector('.game-item__popularity');
-  popularity.innerText = data.popularity;
+  popularity.innerText = `${data.popularity} Viewers`;
 
   const pic = item.querySelector('.game-item__pic');
   pic.src = data.box.large;
