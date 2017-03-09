@@ -1,0 +1,94 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: $c-sidebar-background;
+  max-width: 15rem;
+  overflow: auto;
+
+  &__scroll {
+    overflow: scroll;
+  }
+
+  &__actions {
+    display: flex;
+    flex-shrink: 0;
+    padding: 1rem;
+    padding-top: 0.5rem;
+  }
+}
+
+.logo {
+  margin: 0.5rem auto;
+}
+
+.sidebar-img {
+  width: 7rem;
+  height: 5rem;
+  object-fit: contain;
+}
+
+.fa {
+  margin: 0 1rem;
+  color: $c-icon-color;
+  font-size: 1rem;
+}
+
+.fa-search {
+  margin: 0 0.2rem;
+  color: $c-search-bar-icon;
+}
+
+.sidebar-item {
+  display: flex;
+  justify-content: space-between;
+  color: $c-font-color;
+}
+
+.list-items {
+  margin: 0.5rem;
+  color: $c-list-items-color;
+}
+
+.search-bar {
+  margin: 0 1rem;
+  padding: 0.5rem;
+  background: $c-sidebar-background;
+  box-shadow: #392e5c 0 0 0 1px;
+
+}
+
+.search {
+  width: 45%;
+  margin: 0 0.8rem;
+  background: $c-sidebar-background;
+  color: $c-search-bar-icon;
+  font-size: 0.9rem;
+
+}
+
+.dropdown {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+}
+
+.sticky-footer__wrapper {
+
+}
+
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+}
+
+.btn {
+  flex-grow: 1;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 0.8rem;
+  background: rgba(101, 66, 158, 1.0);
+  color: #dedede;
+}

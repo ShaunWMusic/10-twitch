@@ -1,0 +1,15 @@
+.full-height {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+
+  &__main {
+    padding: 1rem;
+    overflow: scroll;
+    flex-grow: 1;
+  }
+}
+
+body {
+  font-family: Helvetica Neue,Helvetica,sans-serif;
+}

@@ -1,0 +1,44 @@
+.sidebar-section {
+  margin: 1rem;
+  padding: 1rem 1rem 1rem 0;
+  border-top: 0.1rem solid $c-sidebar-border;
+
+  &__content {
+    color: $c-font-color;
+  }
+  &__img1 {
+    width: 27%;
+    height: 2rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    object-fit: cover;
+  }
+  &__img2 {
+    width: 19%;
+    height: 2rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    object-fit: cover;
+  }
+
+  &__header {
+    color: $c-font-color;
+    font-size: 0.8rem;
+  }
+
+  &__title {
+    color: $c-sidebar-sectiontitle;
+    font-size: 0.8rem;
+  }
+
+  &__prime {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.4rem 0;
+  }
+
+  &-item {
+    margin: 0.5rem 0;
+    color: #fff;
+    font-size: 0.8rem;
+  }
+
+}

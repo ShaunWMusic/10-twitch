@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>10-twitch</title>
   <link rel="stylesheet" href="/app.css">
 </head>
+
 <body>
+  <div class="full-height">
+    <div class="sidebar">
+      <div class="sidebar__scroll">
+        <div class="logo">
+          <img src="./img/twitch.jpeg" alt="" class="sidebar-img">
+        </div>
+        <div class="search-bar"><span class="fa fa-search"></span><input type="Search" placeholder="Search" class="search">
+        </div>
+        <ul class="list">
+          <li class="list-items"><span class="fa fa-gamepad"></span>Games</li>
+          <li class="list-items"><span class="fa fa-video-camera"></span>Channels</li>
+          <li class="list-items"><span class="fa fa-youtube-play"></span>Videos</li>
+          <li class="list-items"><span class="fa fa-magic"></span>Creative</li>
+        </ul>
+        <div class="dropdown">
+          <h4 class="sidebar-item">FREE WITH PRIME <span class="fa fa-angle-down"></span></h4>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-section__prime">
+            <img src="./img/twitch-profile-img-5.jpg" alt="" class="sidebar-section__img1">
+            <div class="sidebar-section__content">
+              <h4 class="sidebar-section__header">Newest Hero, Tyrande Whisperwind</h4>
+              <h6 class="sidebar-section__title">Hearthstone</h6>
+            </div>
+          </div>
+          <div class="sidebar-section__prime">
+            <img src="./img/twitch-profile-pic-6.png" alt="" class="sidebar-section__img2">
+            <div class="sidebar-section__content">
+              <h4 class="sidebar-section__header">Streamline with 24 exclusive items</h4>
+              <h6 class="sidebar-section__title">Streamline</h6>
+            </div>
+          </div>
+          <h4 class="sidebar-section-item">RECOMMENDED CHANNELS</h4>
+        </div>
+        <div class="sidebar-bottom-section">
+          <div class="sidebar-section__prime">
+            <img src="./img/twitch-profile-pic-1.jpeg" alt="" class="sidebar-section__img2">
+            <div class="sidebar-section__content">
+              <h4 class="sidebar-section__header">Snowlit</h4>
+              <h6 class="sidebar-section__title">Streaming Creative</h6>
+            </div>
+          </div>
+          <div class="sidebar-section__prime">
+            <img src="./img/twitch-profile-pic-2.png" alt="" class="sidebar-section__img2">
+            <div class="sidebar-section__content">
+              <h4 class="sidebar-section__header">nrdchmp</h4>
+              <h6 class="sidebar-section__title">Streaming Creative</h6>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-footer-section">
+          <h4 class="sidebar-footer-item">MORE AT TWITCH</h4>
+        </div>
+        <div class="footer-link-section">
+          <ul class="footer-link">
+            <li class="footer-link__item">About</li>
+            <li class="footer-link__item">Blog</li>
+            <li class="footer-link__item">Cookie Policy</li>
+            <li class="footer-link__item">Help</li>
+            <li class="footer-link__item">Language</li>
+            <li class="footer-link__item">Partners</li>
+            <li class="footer-link__item">Store</li>
+            <li class="footer-link__item footer-link__item--right">Advertisers</li>
+            <li class="footer-link__item footer-link__item--right">Creative</li>
+            <li class="footer-link__item footer-link__item--right">Developers</li>
+            <li class="footer-link__item footer-link__item--right">Jobs</li>
+            <li class="footer-link__item footer-link__item--right">Music</li>
+            <li class="footer-link__item footer-link__item--right">Press</li>
+            <li class="footer-link__item footer-link__item--right">Terms</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidebar__actions">
+        <button class="btn-login btn">Log In</button>
+        <button class="btn-signup btn">Sign Up</button>
+      </div>
+    </div>
+    <div class="full-height__main">
+      <div class="container">
+        <div class="main-header">
+          <h3 class="title">All Games</h3>
+          <div class="input">
+            <input type="text" placeholder="Search for a game">
+          </div>
+          </div>
+        <ul class="results"></ul>
+      </div>
+    </div>
+  </div>
+
+
   <script src="/app.js" charset="utf-8"></script>
 </body>
+
 </html>

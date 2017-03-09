@@ -1,0 +1,32 @@
+.sidebar-footer-section {
+  display: block;
+}
+
+.sidebar-footer-item {
+  display: block;
+  color: rgba(137, 131, 124, 1.0);
+  margin: 2rem 3rem 0;
+  margin-bottom: -1rem;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  border-top: 0.1rem solid #2c2541;
+  flex-wrap: wrap;
+  height: 5rem;
+
+
+  &-section {
+    font-size: 0.6rem;
+    margin: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  &__item {
+    color: white;
+
+}
+
+}

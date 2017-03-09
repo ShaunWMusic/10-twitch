@@ -25,7 +25,6 @@ test('it adds a new message item element to a list element', (assert) => {
   // Looks that the two messages have been added to the list
   const resultOne = list.querySelector('li');
   const resultTwo = list.querySelector('li:last-of-type');
-
   // Element tag names are uppercase when looked up
   assert.equal(resultOne.tagName, 'LI',
     'createMessageItem should return an `LI` element');
